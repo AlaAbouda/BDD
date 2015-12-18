@@ -1,4 +1,4 @@
-package bibliotheque;
+package net.codestory.simplelenium.bibliotheque;
 
 import java.io.IOException;
 import java.text.DateFormat;

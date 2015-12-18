@@ -1,4 +1,4 @@
-package bibliotheque;
+package net.codestory.simplelenium.bibliotheque;
 
 
 import org.openqa.selenium.By;

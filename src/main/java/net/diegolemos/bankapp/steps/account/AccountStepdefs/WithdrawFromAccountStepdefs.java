@@ -3,12 +3,12 @@ package net.diegolemos.bankapp.steps.account.AccountStepdefs;
 
 import org.assertj.core.api.Assertions;
 
-import bibliotheque.ReadConfFile;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.codestory.simplelenium.SeleniumTest;
+import net.codestory.simplelenium.bibliotheque.ReadConfFile;
 import net.diegolemos.bankapp.account.Account;
 import net.diegolemos.bankapp.all.MenuHeader;
 import net.diegolemos.bankapp.client.Client;

@@ -15,7 +15,7 @@
  */
 package net.codestory.simplelenium.driver;
 
-import bibliotheque.ReadConfFile;
+import net.codestory.simplelenium.bibliotheque.ReadConfFile;
 
 public enum Configuration {
   // Active browser name
