@@ -1,73 +1,63 @@
-/**
- * Name of class : MenuHeader
- *
- * Description   : The navigation of the menu
- *
- * Version       : 1.0
- *
- * Date          : 15/12/2015
- * 
- * Copyright     : Talan Tunis
- */
-
-
 package net.diegolemos.bankapp.all;
 
+import net.codestory.simplelenium.SeleniumTest;
+import org.openqa.selenium.By;
 import java.io.IOException;
 
-import net.codestory.simplelenium.SeleniumTest;
 
-import org.openqa.selenium.By;
-
+/**
+ * name of class : MenuHeader.
+ * description   : The navigation of the menu
+ * @version : 1.0 
+ * @since : 15/12/2015
+ * @author : Talan Tunis
+ */
 public class MenuHeader extends SeleniumTest {
 
-	
-	//Click Clients
-	public void clickClients() throws InterruptedException, IOException {
-		System.out.println("Click Clients");
-		find(By.xpath(Reposetory.getPathClients())).click();
+  /** Click Clients. 
+   *  @throws IOException  If an input exception occurred */
+  public final void clickClients() throws IOException {
+		find(By.xpath(Repository.getPathClients())).click();
 	}
-	
-	//Click Accounts
-	public void clickAccounts() throws InterruptedException, IOException {
-		System.out.println("Click Accounts");
-		find(By.xpath(Reposetory.getPathAccounts())).click();
-	}
-	
-	//Click BankApp
-	public void clickBankApp() throws InterruptedException, IOException {
-		System.out.println("Click BankApp");
-		find(By.xpath(Reposetory.getPathBankApp())).click();
-	}
-	
-	
-	public static class Reposetory {
 
-		
-		public static String getPathClients()
-		{
+	/** Click Accounts. 
+   *  @throws IOException  If an input exception occurred */
+	public final void clickAccounts() throws IOException {
+		find(By.xpath(Repository.getPathAccounts())).click();
+	}
+
+	/** Click BankApp. 
+	 *  @throws IOException  If an input exception occurred */
+	public final void clickBankApp()throws IOException {
+		find(By.xpath(Repository.getPathBankApp())).click();
+	}
+
+	/**class Repository. */
+	public static class Repository {
+
+	  /**Path Client. 
+    * @return the link of client */
+		public static String getPathClients() {
 			return ".//*[@href='#/clients']";
 		}
 		
-		public static String getPathAccounts()
-		{
+    /**Path Account. 
+    * @return the link of BankAPP */
+		public static String getPathAccounts() {
 			return ".//*[@href='#/accounts']";
 		}
 		
-		public static String getPathBankApp()
-		{
+		/** Path BankApp. 
+		 * @return the link of  BankAPP */
+		public static String getPathBankApp() {
 			return ".//*[@href='#']";
 		}
-
 	}
 
-
 	@Override
-	protected String getDefaultBaseUrl() {
+	protected final String getDefaultBaseUrl() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
 
 }

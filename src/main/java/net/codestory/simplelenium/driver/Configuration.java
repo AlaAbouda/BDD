@@ -15,7 +15,7 @@
  */
 package net.codestory.simplelenium.driver;
 
-import net.codestory.simplelenium.bibliotheque.ReadConfFile;
+import net.diegolemos.bankapp.bibliotheque.ReadConfFile;
 
 public enum Configuration {
   // Active browser name
@@ -53,7 +53,7 @@ public enum Configuration {
   }
   
   public static String GetBR(){
-	  String[] Param_Server = ReadConfFile.Get_Info("1");	
+	  String[] Param_Server = ReadConfFile.getInfo("1");	
 	  String Browser = Param_Server[1];
 	  return (Browser);
   }
